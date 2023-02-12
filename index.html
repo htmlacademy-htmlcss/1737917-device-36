@@ -2,37 +2,37 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Интернет-магазин "Девайс"</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo-link logo-header" href="#">
+        <a class="logo-header">
           <img class="logo-header-img" src="images/logo-header.svg" width="145" height="36"
-            alt="Логотип интернет-магазина Девайс." />
+            alt="Логотип интернет-магазина Девайс.">
         </a>
         <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="navigation-search-form-input">Поиск по сайту.</label>
-          <input class="navigation-search-form-input" type="text" id="navigation-search-form-input"
-            placeholder="Поиск по сайту" required />
+          <input class="navigation-search-form-input" type="search" id="navigation-search-form-input"
+            placeholder="Поиск по сайту" required>
           <button class="navigation-search-form-button" type="submit">
             Найти
           </button>
         </form>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item navigation-item-visible">
-            <button class="navigation-user-button navigation-user-button-login" type="button">
+            <a class="navigation-user-button navigation-user-button-login" href="#">
               Войти
-            </button>
+            </a>
           </li>
           <li class="navigation-item">
-            <span class="navigation-user-name">Коля Петухов</span>
-            <button class="navigation-user-button navigation-user-button-logout" type="button">
+            <a class="navigation-user-name" href="#">Коля Петухов</a>
+            <a class="navigation-user-button navigation-user-button-logout" href="#">
               Выйти
-            </button>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
@@ -43,9 +43,7 @@
         </ul>
         <ul class="navigation-list navigation-main">
           <li class="navigation-item">
-            <button class="navigation-item-button-catalog" type="button">
-              Каталог товаров
-            </button>
+            <a class="navigation-link" href="#">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -90,7 +88,7 @@
                 Порхает как бабочка, жалит как пчела!
               </h3>
               <span class="promo-slider-number">01</span>
-              <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадракоптер с лазером." />
+              <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадракоптер с лазером.">
               <p class="promo-slider-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под стандартную камеру.
@@ -102,26 +100,11 @@
                 <dt class="promo-slider-advantages-item">Радиус поражения</dt>
                 <dd class="promo-slider-advantages-description">50 м</dd>
               </dl>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
-                <span class="visually-hidden">Предыдущая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
-                <span class="visually-hidden">Следующая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
-                <span class="visually-hidden">Первый слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
-                <span class="visually-hidden">Второй слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
-                <span class="visually-hidden">Третий слайд.</span>
-              </button>
             </li>
             <li class="promo-slider-item">
               <h3 class="title promo-slider-title">Худеем правильно!</h3>
               <span class="promo-slider-number">02</span>
-              <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет." />
+              <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
               <p class="promo-slider-description">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не
                 пропускать занятия и соблюдать диету.
@@ -131,28 +114,13 @@
                 <dt class="promo-slider-advantages-item">Без подзарядки</dt>
                 <dd class="promo-slider-advantages-description">48 часов</dd>
               </dl>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
-                <span class="visually-hidden">Предыдущая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
-                <span class="visually-hidden">Следующая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
-                <span class="visually-hidden">Первый слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
-                <span class="visually-hidden">Второй слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
-                <span class="visually-hidden">Третий слайд.</span>
-              </button>
             </li>
             <li class="promo-slider-item">
               <h3 class="title promo-slider-title">
                 Делай селфи, как Бен Стиллер!
               </h3>
               <span class="promo-slider-number">03</span>
-              <img src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи." />
+              <img src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
               <p class="promo-slider-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь
                 (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -166,23 +134,23 @@
                 <dt class="promo-slider-advantages-item">Материал</dt>
                 <dd class="promo-slider-advantages-description">Карбон</dd>
               </dl>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
-                <span class="visually-hidden">Предыдущая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
-                <span class="visually-hidden">Следующая страница.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
-                <span class="visually-hidden">Первый слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
-                <span class="visually-hidden">Второй слайд.</span>
-              </button>
-              <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
-                <span class="visually-hidden">Третий слайд.</span>
-              </button>
             </li>
           </ul>
+          <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
+            <span class="visually-hidden">Предыдущая страница.</span>
+          </button>
+          <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
+            <span class="visually-hidden">Следующая страница.</span>
+          </button>
+          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
+            <span class="visually-hidden">Первый слайд.</span>
+          </button>
+          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
+            <span class="visually-hidden">Второй слайд.</span>
+          </button>
+          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
+            <span class="visually-hidden">Третий слайд.</span>
+          </button>
         </div>
       </section>
       <section class="catalog-navigation">
@@ -255,9 +223,7 @@
           </ul>
         </div>
       </section>
-      <button class="button delivery-order-button" type="button">
-        Доставим редкий товар под заказ
-      </button>
+      <a class="button delivery-order-button" href="#">Доставим редкий товар под заказ</a>
       <div class="container">
         <section class="about">
           <h2 class="title about-title">О нас</h2>
@@ -306,9 +272,10 @@
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
             <p class="subscribe-form-email">
-              <label for="subscribe-email"></label>
+              <label class="visually-hidden" for="subscribe-email">Введите ваш email для оформления подписки на
+                еженедельный дайджест</label>
               <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
-                placeholder="Ваш e-mail" required />
+                placeholder="Ваш e-mail" required>
               <span class="subscribe-remark">Это бесплатно</span>
             </p>
             <button class="button subscribe-button" type="submit">
@@ -320,9 +287,9 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="logo-link logo-footer" href="#">
+        <a class="logo-footer">
           <img class="logo-footer-img" src="images/logo-footer.svg" width="145" height="36"
-            alt="Логотип интернет-магазина Девайс." />
+            alt="Логотип интернет-магазина Девайс.">
         </a>
         <address class="footer-contacts-address">
           <p class="footer-contacts-address-text">

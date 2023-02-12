@@ -9,23 +9,23 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo-link logo-header" href="index.html">
+        <a class="logo-header" href="index.html">
           <img class="logo-header-img" src="images/logo-header.svg" width="145" height="36"
             alt="Логотип интернет-магазина Девайс.">
         </a>
         <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="navigation-search-form-input">Поиск по сайту.</label>
-          <input class="navigation-search-form-input" type="text" id="navigation-search-form-input"
+          <input class="navigation-search-form-input" type="search" id="navigation-search-form-input"
             placeholder="Поиск по сайту" required>
           <button class="navigation-search-form-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item ">
-            <button class="navigation-user-button-login" type="button">Войти</button>
-          </li>
           <li class="navigation-item navigation-item-visible">
-            <span class="navigation-user-name">Коля Петухов</span>
-            <button class="navigation-user-button-logout" type="button">Выйти</button>
+            <a class="navigation-user-button navigation-user-button-login" href="#">Войти</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-user-name" href="#">Коля Петухов</a>
+            <a class="navigation-user-button navigation-user-button-logout" href="#">Выйти</a>
           </li>
           <li class="navigation-item ">
             <a class="navigation-link" href="#">Сравнить</a>
@@ -159,9 +159,8 @@
         <h2 class="visually-hidden">Список моноподов для селфи фильтрами.</h2>
         <ul class="catalog-product-list">
           <li class="product-card">
-            <a class="button product-card-button" href="#">
+            <a class="product-card-button" href="#">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
-              <span class="product-card-new product-card-new-visible">new</span>
               <img class="product-card-image" src="images/monopods-catalog/amateur-selfie-stick.jpg" width="360"
                 height="380" alt="">
               <span class="product-card-price">500 ₽</span>
@@ -169,9 +168,8 @@
             </a>
           </li>
           <li class="product-card">
-            <a class="button product-card-button" href="#">
+            <a class="product-card-button" href="#">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-              <span class="product-card-new product-card-new-visible">new</span>
               <img class="product-card-image" src="images/monopods-catalog/professional-selfie-stick.jpg" width="360"
                 height="380" alt="">
               <span class="product-card-price">1 500 ₽</span>
@@ -179,9 +177,8 @@
             </a>
           </li>
           <li class="product-card">
-            <a class="button product-card-button" href="#">
+            <a class="product-card-button" href="#">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-              <span class="product-card-new product-card-new-visible">new</span>
               <img class="product-card-image" src="images/monopods-catalog/unsinkable-selfie-stick.jpg" width="360"
                 height="380" alt="">
               <span class="product-card-price">2 500 ₽</span>
@@ -189,9 +186,8 @@
             </a>
           </li>
           <li class="product-card">
-            <a class="button product-card-button" href="#">
+            <a class="product-card-button" href="#">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-              <span class="product-card-new product-card-new-visible">new</span>
               <img class="product-card-image" src="images/monopods-catalog/follow-me-selfie-stick.jpg" width="360"
                 height="380" alt="">
               <span class="product-card-price">1 500 ₽</span>
@@ -229,7 +225,7 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="logo-link logo-footer" href="#">
+        <a class="logo-footer" href="index.html">
           <img class="logo-footer-img" src="images/logo-footer.svg" width="145" height="36"
             alt="Логотип интернет-магазина Девайс.">
         </a>

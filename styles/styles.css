@@ -106,10 +106,21 @@ img {
   color: inherit;
 }
 
+.navigation-user-name {
+  text-decoration: none;
+  color: #000000;
+}
+
 .navigation-user-button {
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-button-logout {
+  opacity: 0.3;
 }
 
 .navigation-main {
@@ -117,21 +128,6 @@ img {
   font-weight: 800;
   line-height: 21px;
   text-transform: uppercase;
-}
-
-.navigation-item-button-catalog {
-  padding: 0;
-
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 800;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-  border: none;
-
-  cursor: pointer;
 }
 
 .navigation-catalog {
@@ -251,11 +247,13 @@ img {
 /* delivery-order-button */
 
 .delivery-order-button {
+  display: block;
   width: 1160px;
   margin: 0 auto;
 
   font-size: 20px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 /* about */
