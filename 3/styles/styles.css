@@ -1,0 +1,581 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  min-width: 1160px;
+  height: 100%;
+  margin: 0;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* common elements */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  width: 220px;
+  height: 40px;
+  padding: 0;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ffe17f;
+  border: none;
+}
+
+.title {
+  margin: 0;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+/* header */
+
+/* search-form */
+
+.navigation-search-form-input {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-search-form-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* navigation-user */
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-user-name {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-button {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-button-logout {
+  opacity: 0.3;
+}
+
+.navigation-main {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.navigation-catalog {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #ffe17f;
+}
+
+/* promo-slider */
+
+.promo-slider-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.promo-slider-number {
+  display: block;
+  width: 100%;
+  height: 300px;
+
+  font-size: 180px;
+  font-weight: 700;
+  text-align: right;
+  color: #ffffff;
+
+  background-color: #ffe17f;
+}
+
+.promo-slider-description {
+  margin: 0;
+
+  color: #444444;
+}
+
+.promo-slider-link {
+  text-decoration: none;
+}
+
+.promo-slider-advantages {
+  margin: 0;
+}
+
+.promo-slider-advantages-item {
+  font-size: 16px;
+
+  color: #444444;
+}
+
+.promo-slider-advantages-description {
+  margin: 0;
+
+  font-size: 36px;
+}
+
+.promo-slider-advantages-arrow {
+  padding: 0;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.promo-slider-advantages-bullet {
+  padding: 0;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+/* catalog-navigation */
+
+.catalog-navigation-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-navigation-link {
+  display: block;
+  width: 160px;
+  height: 253px;
+
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* services */
+.services {
+  background-color: #f0f0f0;
+}
+
+.services-buttons-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-button {
+  width: 160px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-description {
+  margin: 0;
+
+  color: #444444;
+}
+
+/* delivery-order-button */
+
+.delivery-order-button {
+  display: block;
+  width: 1160px;
+
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+/* about */
+.about-description {
+  margin: 0;
+
+  color: #444444;
+}
+
+.about-delivery-description {
+  margin: 0;
+
+  color: #444444;
+}
+
+.about-delivery-company-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.about-delivery-company-item {
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about-button {
+  width: 270px;
+
+  text-decoration: none;
+}
+
+/* contacts */
+
+.contacts {
+  color: #444444;
+}
+
+.contacts-title {
+  color: #000000;
+}
+
+.contacts-description {
+  margin: 0;
+}
+
+.contacts-subtitle {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-address-text {
+  margin: 0;
+}
+
+.contacts-phone {
+  text-decoration: none;
+}
+
+.contacts-schedule {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.button-write {
+  width: 259px;
+
+  text-decoration: none;
+}
+
+/* subscribe */
+
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-description {
+  margin: 0;
+
+  color: #444444;
+}
+
+.subscribe-form-email {
+  margin: 0;
+}
+
+.subscribe-input {
+  width: 557px;
+  height: 55px;
+  padding: 0;
+
+  background-color: #f0f0f0;
+  border: none;
+  border-bottom: 3px solid #c4c4c4;
+}
+
+.subscribe-input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.subscribe-remark {
+  color: #444444;
+}
+
+.subscribe-button {
+  width: 253px;
+  height: 57px;
+
+  background-color: #f0f0f0;
+  border: 3px solid #c4c4c4;
+}
+
+/* footer */
+
+.page-footer {
+  color: #ffffff;
+
+  background-color: #444444;
+}
+
+.footer-contacts-address {
+  font-style: normal;
+}
+
+.footer-contacts-address-text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-contacts-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-navigation-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.footer-navigation-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* catalog-products */
+
+/* breadcrumps */
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* catalog-filter */
+
+.catalog-filter {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-filter-label {
+  margin: 0;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.catalog-filter-group-title {
+  padding: 0;
+
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* sorting */
+
+.select-control-label {
+  margin: 0;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.select-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+
+  border: none;
+}
+
+/* catalog-product-list */
+
+.catalog-product-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.product-card-title {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.product-card-price {
+  line-height: 21px;
+  color: #444444;
+}
+
+.product-card-button {
+  text-decoration: none;
+}
+
+/* pagination */
+
+.catalog-product-pagination {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.catalog-product-pagination-link {
+  display: block;
+  width: 128px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+
+  opacity: 0.3;
+}
+
+.catalog-product-pagination-prev,
+.catalog-product-pagination-next {
+  padding: 25px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  background-color: #ebebeb;
+
+  opacity: 1;
+}
+
+.catalog-product-pagination-disabled {
+  color: #444444;
+
+  opacity: 0.3;
+}
+
+.catalog-product-pagination-current {
+  opacity: 0.6;
+}
