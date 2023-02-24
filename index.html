@@ -25,12 +25,12 @@
               </button>
             </form>
           </li>
-          <li class="navigation-item navigation-item-visible">
+          <li class="navigation-item navigation-item-log navigation-item-log-visible">
             <a class="navigation-user-button navigation-user-button-login" href="#">
               Войти
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-log">
             <a class="navigation-user-name" href="#">Коля Петухов</a>
             <a class="navigation-user-button navigation-user-button-logout" href="#">
               Выйти
@@ -45,7 +45,7 @@
         </ul>
         <ul class="navigation-list navigation-main">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -261,22 +261,24 @@
       </div>
       <section class="subscribe">
         <div class="container">
-          <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">
-            Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.
-          </p>
+          <div class="subscribe-wrapper">
+            <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">
+              Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.
+            </p>
+          </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
             <p class="subscribe-form-email">
               <label class="visually-hidden" for="subscribe-email">Введите ваш email для оформления подписки на
                 еженедельный дайджест</label>
               <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
                 placeholder="Ваш e-mail" required>
-              <span class="subscribe-remark">Это бесплатно</span>
             </p>
             <button class="button subscribe-button" type="submit">
               Подписаться
             </button>
+            <span class="subscribe-remark">Это бесплатно</span>
           </form>
         </div>
       </section>
