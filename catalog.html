@@ -25,12 +25,12 @@
               </button>
             </form>
           </li>
-          <li class="navigation-item navigation-item-visible">
+          <li class="navigation-item navigation-item-log">
             <a class="navigation-user-button navigation-user-button-login" href="#">
               Войти
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-log navigation-item-log-visible">
             <a class="navigation-user-name" href="#">Коля Петухов</a>
             <a class="navigation-user-button navigation-user-button-logout" href="#">
               Выйти
@@ -153,12 +153,14 @@
                 <option value="popular">Популярные</option>
                 <option value="price">Стоимость</option>
               </select>
-              <button class="sorting-button sorting-button-ascending sorting-button-current" type="button">
-                <span class="visually-hidden">По возрастанию.</span>
-              </button>
-              <button class="sorting-button sorting-button-decending" type="button">
-                <span class="visually-hidden">По убыванию.</span>
-              </button>
+              <div class="sorting-button-wrapper">
+                <button class="sorting-button sorting-button-ascending sorting-button-current" type="button">
+                  <span class="visually-hidden">По возрастанию.</span>
+                </button>
+                <button class="sorting-button sorting-button-decending" type="button">
+                  <span class="visually-hidden">По убыванию.</span>
+                </button>
+              </div>
             </div>
             <ul class="catalog-product-list">
               <li class="product-card">
@@ -203,6 +205,9 @@
               </li>
               <li class="catalog-product-pagination-item">
                 <a class="catalog-product-pagination-link" href="#">2</a>
+              </li>
+              <li class="catalog-product-pagination-item">
+                <a class="catalog-product-pagination-link" href="#">3</a>
               </li>
               <li class="catalog-product-pagination-item">
                 <a class="catalog-product-pagination-link" href="#">...</a>
