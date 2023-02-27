@@ -67,7 +67,7 @@ img {
 
 .button {
   display: block;
-  width: 220px;
+  min-width: 220px;
   padding: 10px 0;
 
   font-family: "Raleway", sans-serif;
@@ -94,8 +94,22 @@ img {
 
 /* header */
 
-.navigation {
+.page-header {
+  margin-top: 20px;
+}
+
+.page-header-index {
+  margin-bottom: 630px;
+}
+
+.page-header-inner {
   margin-bottom: 35px;
+}
+
+.navigation {
+  position: relative;
+
+  background-image: linear-gradient(to bottom, #ffffff 20px, #ffe17f 20px 100%);
 }
 
 .logo-header {
@@ -119,6 +133,7 @@ img {
   font-size: 16px;
   line-height: 20px;
 
+  background-color: #ffe17f;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
 }
@@ -132,6 +147,7 @@ img {
   font-size: 16px;
   line-height: 20px;
 
+  background-color: #ffe17f;
   border: 2px solid #000000;
   border-radius: 0 20px 20px 0;
 }
@@ -228,6 +244,13 @@ img {
 }
 
 .navigation-catalog {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: none;
+  box-sizing: border-box;
+  width: 1160px;
   padding-top: 33px;
   padding-bottom: 27px;
 
@@ -235,6 +258,10 @@ img {
   line-height: 18px;
 
   background-color: #ffe17f;
+}
+
+.navigation-catalog-visible {
+  display: flex;
 }
 
 .navigation-catalog > .navigation-item {
@@ -260,41 +287,97 @@ img {
 /* promo-slider */
 
 .promo-slider {
-  margin-bottom: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+  min-height: 750px;
 }
 
 .promo-slider-list {
   padding: 0;
   margin: 0;
 
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 40px,
+    #ffe17f 40px 340px,
+    #ffffff 340px 100%
+  );
   list-style: none;
 }
 
-.promo-slider-number {
+.promo-slider-item {
+  display: none;
+  margin: 0 auto;
+}
+
+.promo-slider-item-current {
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  grid-template-rows: 40px 150px 150px min-content 1fr;
+  column-gap: 40px;
+}
+
+.promo-slider-title {
+  z-index: 1;
+
   display: block;
-  width: 100%;
-  height: 300px;
+  grid-area: 4/2/5/3;
+  margin: -29px 15px 29px 0;
+}
+
+.promo-slider-number {
+  grid-area: 3/2/4/3;
+  align-self: flex-end;
+  padding-bottom: 32px;
+  margin-right: 49px;
 
   font-size: 180px;
   font-weight: 700;
   text-align: right;
   color: #ffffff;
+}
 
-  background-color: #ffe17f;
+.promo-slider-image {
+  grid-area: 3/1/6/2;
+}
+
+.promo-slider-wrapper {
+  grid-area: 5/2/6/3;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo-slider-description {
+  display: block;
   margin: 0;
+  margin-bottom: 50px;
 
   color: #444444;
 }
 
 .promo-slider-link {
+  align-self: flex-start;
+  margin-bottom: 50px;
+
   text-decoration: none;
 }
 
 .promo-slider-advantages {
+  display: flex;
   margin: 0;
+}
+
+.promo-slider-advantages-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.promo-slider-advantages-wrapper:not(:last-child) {
+  margin-right: 20px;
 }
 
 .promo-slider-advantages-item {
@@ -305,6 +388,7 @@ img {
 
 .promo-slider-advantages-description {
   margin: 0;
+  margin-bottom: 12px;
 
   font-size: 36px;
 }
@@ -371,19 +455,12 @@ img {
 
   padding-bottom: 72px;
   margin-bottom: 70px;
-}
 
-.services::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 100%;
-  height: 289px;
-
-  background-color: #f0f0f0;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 102px,
+    #f0f0f0 102px 100%
+  );
 }
 
 .services-buttons-list {
@@ -862,7 +939,6 @@ img {
 }
 
 .sorting-button {
-  display: block;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -874,13 +950,30 @@ img {
 /* catalog-product-list */
 
 .catalog-product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
   padding: 70px 40px 44px;
   margin: 0;
 
   list-style: none;
 }
 
+.product-card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 380px min-content;
+  grid-template-areas:
+    "image image"
+    "title price";
+  row-gap: 32px;
+}
+
 .product-card-title {
+  grid-area: title;
   margin: 0;
 
   font-size: 16px;
@@ -889,12 +982,34 @@ img {
   letter-spacing: -0.02em;
 }
 
+.product-card-image {
+  grid-area: image;
+  object-fit: contain;
+}
+
 .product-card-price {
+  grid-area: price;
+  justify-self: flex-end;
+
   line-height: 21px;
   color: #444444;
 }
 
 .product-card-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  padding: 0;
+  margin: auto;
+
   text-decoration: none;
 }
 

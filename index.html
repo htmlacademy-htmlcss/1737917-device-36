@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header-index">
       <nav class="navigation container">
         <a class="logo-header">
           <img class="logo-header-img" src="images/logo-header.svg" width="145" height="36"
@@ -57,7 +57,7 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-catalog">
+        <ul class="navigation-list navigation-catalog navigation-catalog-visible">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Виртуальная реальность</a>
             <a class="navigation-link" href="catalog.html">Моноподы для селфи</a>
@@ -79,57 +79,78 @@
         <div class="container">
           <h2 class="visually-hidden">Промо-блок.</h2>
           <ul class="promo-slider-list">
-            <li class="promo-slider-item">
+            <li class="promo-slider-item promo-slider-item-current">
               <h3 class="title promo-slider-title">
                 Порхает как бабочка, жалит как пчела!
               </h3>
               <span class="promo-slider-number">01</span>
-              <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадракоптер с лазером.">
-              <p class="promo-slider-description">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                лазером, замаскированным под стандартную камеру.
-              </p>
-              <a class="button promo-slider-link" href="#">Подробнее</a>
-              <dl class="promo-slider-advantages">
-                <dt class="promo-slider-advantages-item">Дальность полета</dt>
-                <dd class="promo-slider-advantages-description">800 м</dd>
-                <dt class="promo-slider-advantages-item">Радиус поражения</dt>
-                <dd class="promo-slider-advantages-description">50 м</dd>
-              </dl>
+              <img class="promo-slider-image" src="images/slider/slider-1.png" width="560" height="560"
+                alt="Квадракоптер с лазером.">
+              <div class="promo-slider-wrapper">
+                <p class="promo-slider-description">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                  лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="button promo-slider-link" href="#">Подробнее</a>
+                <dl class="promo-slider-advantages">
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Дальность полета</dt>
+                    <dd class="promo-slider-advantages-description">800 м</dd>
+                  </div>
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Радиус поражения</dt>
+                    <dd class="promo-slider-advantages-description">50 м</dd>
+                  </div>
+                </dl>
+              </div>
             </li>
-            <li class="promo-slider-item">
+            <li class="promo-slider-item ">
               <h3 class="title promo-slider-title">Худеем правильно!</h3>
               <span class="promo-slider-number">02</span>
-              <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-              <p class="promo-slider-description">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                пропускать занятия и соблюдать диету.
-              </p>
-              <a class="button promo-slider-link" href="#">Подробнее</a>
-              <dl class="promo-slider-advantages">
-                <dt class="promo-slider-advantages-item">Без подзарядки</dt>
-                <dd class="promo-slider-advantages-description">48 часов</dd>
-              </dl>
+              <img class="promo-slider-image" src="images/slider/slider-2.png" width="560" height="560"
+                alt="Фитнес-браслет.">
+              <div class="promo-slider-wrapper">
+                <p class="promo-slider-description">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                  пропускать занятия и соблюдать диету.
+                </p>
+                <a class="button promo-slider-link" href="#">Подробнее</a>
+                <dl class="promo-slider-advantages">
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Без подзарядки</dt>
+                    <dd class="promo-slider-advantages-description">48 часов</dd>
+                  </div>
+                </dl>
+              </div>
             </li>
-            <li class="promo-slider-item">
+            <li class="promo-slider-item ">
               <h3 class="title promo-slider-title">
                 Делай селфи, как Бен Стиллер!
               </h3>
               <span class="promo-slider-number">03</span>
-              <img src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
-              <p class="promo-slider-description">
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 кг.
-              </p>
-              <a class="button promo-slider-link" href="#">Подробнее</a>
-              <dl class="promo-slider-advantages">
-                <dt class="promo-slider-advantages-item">Длина палки</dt>
-                <dd class="promo-slider-advantages-description">8,5 м</dd>
-                <dt class="promo-slider-advantages-item">Вес палки</dt>
-                <dd class="promo-slider-advantages-description">5 кг</dd>
-                <dt class="promo-slider-advantages-item">Материал</dt>
-                <dd class="promo-slider-advantages-description">Карбон</dd>
-              </dl>
+              <img class="promo-slider-image" src="images/slider/slider-3.png" width="560" height="560"
+                alt="Палка для селфи.">
+              <div class="promo-slider-wrapper">
+                <p class="promo-slider-description">
+                  Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                  (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a class="button promo-slider-link" href="#">Подробнее</a>
+                <dl class="promo-slider-advantages">
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Длина палки</dt>
+                    <dd class="promo-slider-advantages-description">8,5 м</dd>
+                  </div>
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Вес палки</dt>
+                    <dd class="promo-slider-advantages-description">5 кг</dd>
+                  </div>
+                  <div class="promo-slider-advantages-wrapper">
+                    <dt class="promo-slider-advantages-item">Материал</dt>
+                    <dd class="promo-slider-advantages-description">Карбон</dd>
+                  </div>
+                </dl>
+              </div>
             </li>
           </ul>
           <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
