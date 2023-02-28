@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header page-header-index">
+    <header class="page-header">
       <nav class="navigation container">
         <a class="logo-header">
           <img class="logo-header-img" src="images/logo-header.svg" width="145" height="36"
@@ -57,7 +57,7 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-catalog navigation-catalog-visible">
+        <ul class="navigation-list navigation-catalog ">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Виртуальная реальность</a>
             <a class="navigation-link" href="catalog.html">Моноподы для селфи</a>
@@ -75,100 +75,95 @@
     </header>
     <main class="main-index main-container">
       <h1 class="visually-hidden">Интернет-магазин "Девайс".</h1>
-      <section class="promo-slider">
-        <div class="container">
-          <h2 class="visually-hidden">Промо-блок.</h2>
-          <ul class="promo-slider-list">
-            <li class="promo-slider-item promo-slider-item-current">
-              <h3 class="title promo-slider-title">
-                Порхает как бабочка, жалит как пчела!
-              </h3>
-              <span class="promo-slider-number">01</span>
-              <img class="promo-slider-image" src="images/slider/slider-1.png" width="560" height="560"
-                alt="Квадракоптер с лазером.">
-              <div class="promo-slider-wrapper">
-                <p class="promo-slider-description">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                  лазером, замаскированным под стандартную камеру.
-                </p>
-                <a class="button promo-slider-link" href="#">Подробнее</a>
-                <dl class="promo-slider-advantages">
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Дальность полета</dt>
-                    <dd class="promo-slider-advantages-description">800 м</dd>
-                  </div>
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Радиус поражения</dt>
-                    <dd class="promo-slider-advantages-description">50 м</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-            <li class="promo-slider-item ">
-              <h3 class="title promo-slider-title">Худеем правильно!</h3>
-              <span class="promo-slider-number">02</span>
-              <img class="promo-slider-image" src="images/slider/slider-2.png" width="560" height="560"
-                alt="Фитнес-браслет.">
-              <div class="promo-slider-wrapper">
-                <p class="promo-slider-description">
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                  пропускать занятия и соблюдать диету.
-                </p>
-                <a class="button promo-slider-link" href="#">Подробнее</a>
-                <dl class="promo-slider-advantages">
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Без подзарядки</dt>
-                    <dd class="promo-slider-advantages-description">48 часов</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-            <li class="promo-slider-item ">
-              <h3 class="title promo-slider-title">
-                Делай селфи, как Бен Стиллер!
-              </h3>
-              <span class="promo-slider-number">03</span>
-              <img class="promo-slider-image" src="images/slider/slider-3.png" width="560" height="560"
-                alt="Палка для селфи.">
-              <div class="promo-slider-wrapper">
-                <p class="promo-slider-description">
-                  Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                  (Восемь, Карл!) метров длиной и весом всего 5 кг.
-                </p>
-                <a class="button promo-slider-link" href="#">Подробнее</a>
-                <dl class="promo-slider-advantages">
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Длина палки</dt>
-                    <dd class="promo-slider-advantages-description">8,5 м</dd>
-                  </div>
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Вес палки</dt>
-                    <dd class="promo-slider-advantages-description">5 кг</dd>
-                  </div>
-                  <div class="promo-slider-advantages-wrapper">
-                    <dt class="promo-slider-advantages-item">Материал</dt>
-                    <dd class="promo-slider-advantages-description">Карбон</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-          </ul>
-          <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
-            <span class="visually-hidden">Предыдущая страница.</span>
-          </button>
-          <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
-            <span class="visually-hidden">Следующая страница.</span>
-          </button>
-          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
-            <span class="visually-hidden">Первый слайд.</span>
-          </button>
-          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
-            <span class="visually-hidden">Второй слайд.</span>
-          </button>
-          <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
-            <span class="visually-hidden">Третий слайд.</span>
-          </button>
-        </div>
+      <section class="promo-slider container">
+        <h2 class="visually-hidden">Промо-блок.</h2>
+        <ol class="promo-slider-list">
+          <li class="promo-slider-item promo-slider-item-current">
+            <h3 class="title promo-slider-title">
+              Порхает как бабочка, жалит как пчела!
+            </h3>
+            <img class="promo-slider-image" src="images/slider/slider-1.png" width="560" height="560"
+              alt="Квадракоптер с лазером.">
+            <div class="promo-slider-wrapper">
+              <p class="promo-slider-description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="button promo-slider-link" href="#">Подробнее</a>
+              <dl class="promo-slider-advantages">
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Дальность полета</dt>
+                  <dd class="promo-slider-advantages-description">800 м</dd>
+                </div>
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Радиус поражения</dt>
+                  <dd class="promo-slider-advantages-description">50 м</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="promo-slider-item ">
+            <h3 class="title promo-slider-title">Худеем<br>правильно!</h3>
+            <img class="promo-slider-image" src="images/slider/slider-2.png" width="560" height="560"
+              alt="Фитнес-браслет.">
+            <div class="promo-slider-wrapper">
+              <p class="promo-slider-description">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                пропускать занятия и соблюдать диету.
+              </p>
+              <a class="button promo-slider-link" href="#">Подробнее</a>
+              <dl class="promo-slider-advantages">
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Без подзарядки</dt>
+                  <dd class="promo-slider-advantages-description">48 часов</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="promo-slider-item ">
+            <h3 class="title promo-slider-title">
+              Делай селфи,<br>как Бен Стиллер!
+            </h3>
+            <img class="promo-slider-image" src="images/slider/slider-3.png" width="560" height="560"
+              alt="Палка для селфи.">
+            <div class="promo-slider-wrapper">
+              <p class="promo-slider-description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <a class="button promo-slider-link" href="#">Подробнее</a>
+              <dl class="promo-slider-advantages">
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Длина палки</dt>
+                  <dd class="promo-slider-advantages-description">8,5 м</dd>
+                </div>
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Вес палки</dt>
+                  <dd class="promo-slider-advantages-description">5 кг</dd>
+                </div>
+                <div class="promo-slider-advantages-wrapper">
+                  <dt class="promo-slider-advantages-item">Материал</dt>
+                  <dd class="promo-slider-advantages-description">Карбон</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+        </ol>
+        <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-left" type="button">
+          <span class="visually-hidden">Предыдущая страница.</span>
+        </button>
+        <button class="promo-slider-advantages-arrow promo-slider-advantages-arrow-right" type="button">
+          <span class="visually-hidden">Следующая страница.</span>
+        </button>
+        <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-first" type="button">
+          <span class="visually-hidden">Первый слайд.</span>
+        </button>
+        <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-second" type="button">
+          <span class="visually-hidden">Второй слайд.</span>
+        </button>
+        <button class="promo-slider-advantages-bullet promo-slider-advantages-bullet-third" type="button">
+          <span class="visually-hidden">Третий слайд.</span>
+        </button>
       </section>
       <section class="catalog-navigation">
         <h2 class="visually-hidden">Список категорий каталога.</h2>
