@@ -512,7 +512,7 @@ img {
   width: 14px;
   height: 6px;
 
-  background-image: url(../images/arrow-popover-tooltip.svg);
+  background-image: url("../images/arrow-popover-tooltip.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -668,6 +668,7 @@ img {
 
 .navigation-main {
   justify-content: flex-end;
+  gap: 10px 0;
 
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1734,6 +1735,7 @@ img {
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 640px;
   padding: 0;
@@ -2098,7 +2100,7 @@ img {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 
   cursor: pointer;
 }
@@ -2106,7 +2108,7 @@ img {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -2272,7 +2274,7 @@ img {
 
   -webkit-appearance: none;
 
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -2309,6 +2311,7 @@ img {
   padding: 0;
   margin: 0;
 
+  background-color: #f0f0f0;
   border: none;
 
   cursor: pointer;
@@ -2858,7 +2861,7 @@ img {
 .delivery-order-form-field[type="number"]::-webkit-outer-spin-button,
 .delivery-order-form-field[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -2884,6 +2887,7 @@ img {
   display: flex;
   width: 60px;
 
+  background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
